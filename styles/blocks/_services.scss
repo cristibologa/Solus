@@ -1,0 +1,74 @@
+@use '../helpers' as *;
+.services{
+	
+	&__span{
+		font-size:rem(14);
+	}
+	&__header{
+		
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		max-width: rem(420);
+		gap: rem(10);
+	}
+
+	&__options{
+		margin-top: rem(70);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: rem(40);
+
+		@include mobile{
+			grid-template-columns: 1fr;
+			gap: rem(25);
+		}
+	}
+
+
+}
+
+.cart{
+	border-radius: rem(60);
+	padding-block: rem(80);
+	padding-inline: rem(50);
+	display: flex;
+	&__description{
+		max-width:rem(300) ;
+		display: flex;
+		flex-direction: column;
+		gap: rem(30);
+		align-items: start;
+
+		&-large{
+			max-width:rem(580) ;
+		}
+	}
+
+	&-brown{
+		background-color:var(--color-yellow-light);
+		background-image: url(../../images/services1.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size:contain
+	}
+	&-white{
+		background-color:var(--color-white);
+	}
+
+	&-large{
+		background-color:var(--color-white);
+		grid-column: -1 /1;
+		background-image: url(../../images/services2.png);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size:contain
+
+	}
+}
+
+
+.header-wraper{
+	display: flex;
+	justify-content: center;
+}

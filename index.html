@@ -11,43 +11,41 @@
 </head>
 <body>
   <header class="header" data-js-header>
-    <div class="header__body">
-      <div class="header__body-inner container">
-        <a
+    <div class="header__body container">
+        
+          <nav class="header__menu ">
+            <ul class="header__menu-list header__menu-left hidden-mobile ">
+              <li class="header__menu-item">
+                <a class="header__menu-link " href="/">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">About</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="/">Services</a>
+              </li>
+            </ul>
+            <a
           class="header__logo logo"
           href="/"
           aria-label="Home"
           title="Home"
         >
-          <img
-            class="logo__image"
-            src="./images/logo.svg"
-            alt=""
-            width="179" height="50"
-          />
+          Solus
         </a>
-        <div class="header__overlay" data-js-header-overlay>
-          <nav class="header__menu">
-            <ul class="header__menu-list">
+            <ul class="header__menu-list header__menu-right hidden-mobile">
               <li class="header__menu-item">
-                <a class="header__menu-link is-active" href="./index.html">Home</a>
+                <a class="header__menu-link " href="/">Therapists</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="./news.html">News</a>
+                <a class="header__menu-link" href="/">Resources</a>
               </li>
               <li class="header__menu-item">
-                <a class="header__menu-link" href="./podcasts.html">Podcasts</a>
-              </li>
-              <li class="header__menu-item">
-                <a class="header__menu-link" href="./resources.html">Resources</a>
+                <a class="header__menu-link" href="/">Contac</a>
               </li>
             </ul>
-          </nav>
-          <a class="header__contact-us-link button button--accent" href="./contacts.html">
-            Contact Us
-          </a>
-        </div>
-        <button
+
+            <button
           class="header__burger-button burger-button visible-mobile"
           type="button"
           aria-label="Open menu"
@@ -58,120 +56,95 @@
           <span class="burger-button__line"></span>
           <span class="burger-button__line"></span>
         </button>
-      </div>
+            
+        </nav>
+          
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__main container">
-        <div class="hero__body">
-          <p class="hero__subtitle">Your Journey to Tomorrow Begins Here</p>
-          <h1 class="hero__title" id="hero-title">Explore the Frontiers of Artificial Intelligence</h1>
-          <div class="hero__description">
-            <p>Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us on this visionary expedition into the heart of AI.</p>
+     <section class="hero" aria-labelledby="hero-title">
+      
+        <div class="hero__body container">
+
+          <img class="hero__image-left" src="../../images/hero1.png" alt="">
+
+          <div class="hero__wrapper">
+            <h1 class="hero__title" id="hero-title">Support for Your Mental Well-being</h1>
+            
+            <p class="hero__description">Connect with licensed therapists, counselors, and wellness coaches to support your journey.</p>
+
+            
+            <button class="button hero__button">Get Started</button>
           </div>
+
+          <img class="hero__image-right" src="../../images/hero2.png" alt="">
+
         </div>
-        
-      </div>
       
     </section>
 
-    <section class="section" aria-labelledby="features-title">
-      <header class="section__header">
-        <div class="section__header-inner container">
-          <div class="section__header-info">
-            <p class="section__subtitle tag">Unlock the Power of</p>
-            <h2 class="section__title" id="features-title">FutureTech Features</h2>
-          </div>
+     <section class="section about" >
+      
+      <div class="about__body container">
+        <div class="about__description">
+            <span class="about__span">HOW IT WORKS</span>
+            <h2 class="about__header">We Help You Prioritize Your Mental Health</h2>
+            <p class="about__text">Browse therapists, book a session, and start your healing journey with trusted professionals.</p>
+            <button class="button about__button">Find a Therapist</button>
         </div>
-      </header>
-      <div class="section__body">
-        <ul class="list">
-          <li class="list__item">
-            <div class="card container">
-              <div class="card__preview">
-                <div class="card__preview-main">
-                  <img
-                    class="card__preview-icon"
-                    src="./images/features/1.svg"
-                    alt=""
-                    width="80" height="80" loading="lazy"
-                  />
-                  <div class="card__preview-info">
-                    <h3 class="card__preview-title">Future Technology Blog</h3>
-                    <div class="card__preview-description">
-                      <p>Stay informed with our blog section dedicated to future technology.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__body">
-                <div class="card__grid card__grid--2-cols">
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Quantity</h4>
-                    <p class="card__cell-description">Over 1,000 articles on emerging tech trends and breakthroughs.</p>
-                  </div>
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Variety</h4>
-                    <p class="card__cell-description">Articles cover fields like AI, robotics, biotechnology, and more.</p>
-                  </div>
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Frequency</h4>
-                    <p class="card__cell-description">Fresh content added daily to keep you up to date.</p>
-                  </div>
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Authoritative</h4>
-                    <p class="card__cell-description">Written by our team of tech experts and industry professionals.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="list__item">
-            <div class="card container">
-              <div class="card__preview">
-                <div class="card__preview-main">
-                  <img
-                    class="card__preview-icon"
-                    src="./images/features/2.svg"
-                    alt=""
-                    width="80" height="80" loading="lazy"
-                  />
-                  <div class="card__preview-info">
-                    <h3 class="card__preview-title">Research Insights Blogs</h3>
-                    <div class="card__preview-description">
-                      <p>Dive deep into future technology concepts with our research section.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card__body">
-                <div class="card__grid card__grid--2-cols">
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Depth</h4>
-                    <p class="card__cell-description">500+ research articles for in-depth understanding.</p>
-                  </div>
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Graphics</h4>
-                    <p class="card__cell-description">Visual aids and infographics to enhance comprehension.</p>
-                  </div>
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Trends</h4>
-                    <p class="card__cell-description">Explore emerging trends in future technology research.</p>
-                  </div>
-                  <div class="card__cell tile">
-                    <h4 class="card__cell-title h5">Contributors</h4>
-                    <p class="card__cell-description">Contributions from tech researchers and academics.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <div class="about__bg hidden-mobile">
+          <img class="about__image" src="./images/about.png" alt="Health" width="415" height="493">
+        </div>
       </div>
-    </section>
+     </section>
+     <section class="section services container">
 
+        <div class="header-wraper">
+          <header class="services__header">
+            <span class="services__span">SERVICES</span>
+            <h2 class="services__title">Your Path to Well-being</h2>
+            <p class="services__text">Discover expert guidance for a healthier mind and balanced life.</p>
+          </header>
+        </div>
+
+          <div class="services__body">
+            <div class="services__options">
+
+              <div class="cart cart-brown">
+                <div class="cart__description">
+                  <h3 class="cart__title">Mindfulness & Meditation</h3>
+                <p class="cart__text">Guided meditation sessions and stress management techniques.</p>
+                <button class="button button-transparent">Learn More</button>
+                </div>
+                
+              </div>
+
+               <div class="cart cart-white">
+                <div class="cart__description">
+                  <h3 class="cart__title">One-on-One Therapy</h3>
+                <p class="cart__text">Virtual and in-person therapy sessions with licensed professionals.</p>
+                <button class="button button-transparent">Learn More</button>
+                </div>
+                
+              </div>
+
+              <div class="cart cart-large">
+                <div class="cart__description cart__description-large">
+                  <h3 class="cart__title">Wellness Coaching</h3>
+                <p class="cart__text">Personalized guidance to help you build healthier habits, manage stress, and achieve balance in all areas of your life.</p>
+                <p class="cart__text">Our wellness coaches support you in creating sustainable routines for mental, emotional, and physical well-being.</p>
+                <button class="button ">Learn More</button>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        
+          
+
+      </section>
   </main>
 
   <!-- <footer class="footer">
@@ -181,5 +154,44 @@
       </div>
     </div>
   </footer> -->
+
+  <div class="burger__menu container">
+    <div class="burger__menu-header">
+        <a href="">logo</a>
+    <button
+          class="burger-button  burger__menu-button"
+          type="button"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+    </div>
+
+    <ul class=" burger__menu-list ">
+        <li class="burger__menu-item">
+            <a class="burger__menu-link " href="/">Home</a>
+        </li>
+        <li class="burger__menu-item">
+            <a class="burger__menu-link" href="/">About</a>
+        </li>
+        <li class="burger__menu-item">
+            <a class="burger__menu-link" href="/">Services</a>
+        </li>
+        <li class="burger__menu-item">
+            <a class="burger__menu-link " href="/">Therapists</a>
+        </li>
+        <li class="burger__menu-item">
+            <a class="burger__menu-link" href="/">Resources</a>
+        </li>
+        <li class="burger__menu-item">
+            <a class="burger__menu-link" href="/">Contac</a>
+        </li>
+    </ul>
+ </div>
+
 </body>
 </html>

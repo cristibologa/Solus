@@ -1,5 +1,22 @@
 @use '../helpers' as *;
 
 .logo {
-  max-width: fluid(179, 126);
+  font-size: fluid(50, 30);
+  font-weight: 700;
+
+  @include laptop{
+    color: red;
+  }
+  @include tablet{
+    color: green
+  }
+  @include mobile{
+    color: blue
+  }
+
+  @include mobile-s{
+    color: yellow
+  }
+  
+  
 }
