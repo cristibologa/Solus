@@ -1,0 +1,82 @@
+@use '../helpers' as *;
+.testimonials{
+
+	&__body{
+		display: flex;
+		gap: rem(100);
+
+		@include tablet{
+    	flex-direction: column;
+		gap: rem(50);
+  	} 
+	
+	}
+
+	&__description{
+		padding-inline: rem(40);
+		min-width: rem(500);
+		display: flex;
+		flex-direction: column;
+		gap: rem(35);
+
+	}
+	&__span{
+		font-size: rem(14);
+	}
+	&__cards-wrapper {
+  
+  		overflow: hidden;
+ 		position: relative;
+}
+	&__cards{
+		display: flex;
+  		transition: transform 0.5s;
+  		position: relative;
+		
+	}
+
+	&__buttons{
+		display: flex;
+		gap: rem(20);
+	}
+
+}
+
+
+.card{
+	background-color: var(--color-yellow-light);
+	padding-block: rem(50);
+	padding-inline:rem(40) ;
+	border-radius: rem(60);
+	min-width: 400px;
+	position: relative;
+	margin-right: 20px;
+
+	&-green{
+		background-color: var(--color-green);
+		color: var(--color-white);
+	}
+}
+
+
+.button-left{
+	display: inline-flex;
+  justify-content: center;
+  width: rem(55);
+  height: rem(55);
+  white-space: nowrap;
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 100%
+}
+
+.button-right{
+	display: inline-flex;
+  justify-content: center;
+  width: rem(55);
+  height: rem(55);
+  white-space: nowrap;
+  background-color: var(--color-green);
+  border: none;
+  border-radius: 100%
+}
