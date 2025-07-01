@@ -1,0 +1,36 @@
+@use '../helpers' as *;
+
+.community{
+	background-color: var(--color-white);
+	border-radius: var(--border-radius);
+	
+	padding-block: rem(60);
+	padding-left: rem(60);
+	
+	position: relative;
+	@include mobile{
+    	padding-block: rem(30);
+		padding-left: rem(30);
+  	}
+
+	&__header{
+		display: flex;
+		flex-direction: column;
+		gap: rem(50);
+		align-items: start;
+		max-width: rem(440);
+		position: relative;
+		z-index: 100;
+		
+	}
+	&__span{
+		font-size: rem(14);
+	}
+
+	&__img{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	
+}

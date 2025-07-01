@@ -1,0 +1,33 @@
+@use '../helpers' as *;
+
+.resources{
+	&__list{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr ;
+		gap: rem(40);
+		margin-top: rem(80);
+
+		@include tablet{
+    		grid-template-columns: 1fr ;
+  		}
+	}
+
+	&-card{
+		padding: rem(60) rem(50);
+		background-color: var(--color-white);
+		display: flex;
+		flex-direction: column;
+		gap: rem(20);
+		border-radius: var(--border-radius);
+		align-items: center;
+		text-align: center;
+		@include mobile{
+    		padding: rem(35) rem(20);
+  		}
+
+
+		&__button{
+			margin-top: rem(40);
+		}
+	}
+}

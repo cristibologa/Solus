@@ -1,0 +1,16 @@
+@use '../helpers' as *;
+
+.header-wraper{
+	display: flex;
+	justify-content: center;
+}
+.header__center{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		max-width: rem(420);
+		gap: rem(10);
+		&__span{
+		font-size:rem(14);
+	}
+}

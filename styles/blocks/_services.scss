@@ -1,18 +1,6 @@
 @use '../helpers' as *;
 .services{
 	
-	&__span{
-		font-size:rem(14);
-	}
-	&__header{
-		
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		max-width: rem(420);
-		gap: rem(10);
-	}
-
 	&__options{
 		margin-top: rem(70);
 		display: grid;
@@ -24,7 +12,6 @@
 			gap: rem(25);
 		}
 	}
-
 
 }
 
@@ -68,7 +55,3 @@
 }
 
 
-.header-wraper{
-	display: flex;
-	justify-content: center;
-}

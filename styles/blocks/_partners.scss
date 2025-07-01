@@ -1,0 +1,17 @@
+@use '../helpers' as *;
+.partners{
+	background-color: var(--color-white);
+	padding: rem(60) rem(50);
+	font-size: fluid(22, 18);
+	border-radius: rem(60);
+	@include mobile {
+		padding: rem(30) rem(30);
+	}
+	&__list{
+		display: flex;
+		gap:rem(20);
+		align-items:center;
+		justify-content: space-between; 
+		flex-wrap: wrap;
+	}
+}
