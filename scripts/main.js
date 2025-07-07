@@ -42,3 +42,29 @@ rightBtn.addEventListener("click", () => {
     updateTestimonialsSlide();
   }
 });
+
+// acordeon
+
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+accordionHeaders.forEach((header) => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+    const isActive = content.classList.contains("active");
+    const plus = document.querySelector(".accordion__plus");
+
+    // Close all other sections
+    document.querySelectorAll(".accordion-content").forEach((item) => {
+      item.classList.remove("active");
+      item.style.maxHeight = null;
+      plus.classList.remove("active");
+    });
+
+    // Toggle the clicked section
+    if (!isActive) {
+      content.classList.add("active");
+      header.classList.add("active");
+      content.style.maxHeight = content.scrollHeight + "px";
+      plus.classList.add("active");
+    }
+  });
+});

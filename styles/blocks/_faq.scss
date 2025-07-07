@@ -1,0 +1,107 @@
+@use '../helpers' as *;
+
+.faq-wraper{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	// align-items: end; 
+	gap:rem(20);
+	@include laptop{
+    grid-template-columns: 1fr;
+	gap: rem(30);
+  }
+
+}
+
+.faq{
+	&__header{
+	display: flex;
+	flex-direction: column;
+	gap: rem(30);
+	padding-left: rem(30);
+	@include laptop{
+		align-items: center;
+		padding-left: 0;
+		
+	}
+	}
+
+	&__span{
+		font-size: rem(14);
+	}
+
+	&__image{
+		@include laptop{
+		display: none;
+		
+	}
+	}
+}
+
+.accordion{
+	display: flex;
+	flex-direction: column;
+	gap: rem(20);
+	margin-top: 30%;
+	@include laptop{
+    margin-top: 0;
+  }
+	&-item{
+		background-color: var(--color-white);
+		padding: rem(30) rem(50) rem(20);
+		border-radius: var(--border-radius);
+		color: var(--color-green);
+		
+	}
+	&-header{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+	
+	}
+	&__plus{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    position: relative;
+    border-radius: 50%;
+	background-color: var(--color-yellow-light);
+
+	&.active{
+		&:after{
+		rotate: 0deg;
+    
+	}
+	}
+
+	&:before, &:after{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: "";
+    width: 45%;
+    height: 10%;
+    background-color: var(--color-green);
+	}
+	&:after{
+	rotate: 90deg;
+    transition-duration: 0.3s;
+	}
+
+	}
+
+	&-content {
+        max-height: 0;
+        overflow: hidden;
+		transition: all ease .3s;
+		padding-top: rem(10);
+       
+    }
+
+        
+}
+
